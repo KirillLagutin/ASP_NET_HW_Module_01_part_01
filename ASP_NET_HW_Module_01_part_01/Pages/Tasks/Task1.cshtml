@@ -1,0 +1,12 @@
+﻿@page
+@model ASP_NET_HW_Module_01_part_01.Pages.Tasks.Task1Model
+
+@{
+	ViewData["Title"] = "Решение 1";
+
+	var numberDayThisYear = new Task1Model();
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h6>Номер текущего дня в этом году равен: @numberDayThisYear.NumberDay</h6>

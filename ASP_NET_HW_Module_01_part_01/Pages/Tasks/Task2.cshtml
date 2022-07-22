@@ -1,0 +1,21 @@
+﻿@page
+@model ASP_NET_HW_Module_01_part_01.Pages.Tasks.Task2Model
+
+@{
+	ViewData["Title"] = "Решение 2";
+
+	var randomLetter = new Task2Model(); 
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h6>Случайная буква английского алфавита</h6>
+
+<p>
+	<button onclick="location.reload()">Сгенерировать</button> 
+
+	<span style="font-size:2em; font-weight:bold">
+		" @randomLetter.GetRandomLetter() "
+	</span>
+</p>
+
